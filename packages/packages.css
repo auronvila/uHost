@@ -1,0 +1,93 @@
+.packages-container {
+    display: inline-block;
+    border: 4px solid #0e4f1f;
+    padding: 2.1rem;
+    width: 800px;
+    margin-top: 4.2rem;
+    text-decoration: none;
+    border-left: 0px;
+}
+
+.packages-container:hover,
+.packages-container:active {
+    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-color: #838181;
+}
+
+.package__wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.package__main-header {
+    color: black;
+}
+
+.package__subtitle {
+    color: #818181;
+}
+
+.package__paragraph {
+    background: #f1f5f2;
+    padding: 1rem;
+    border: 2px solid #0e4f1f;
+    color: #0e4f1f;
+}
+
+.background {
+    background: url("../images/plans-background.jpg") center/cover;
+    filter: grayscale(50%);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+#free {
+    background: rgba(234, 252, 237, 0.95);
+    float: right;
+    border-right: 0;
+    border-left: 4px solid #0e4f1f;
+    text-align: right;
+}
+
+#free:hover,
+#free:active {
+    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-color: #838181;
+}
+
+#plus {
+    background: rgba(213, 255, 220, 0.95);
+}
+
+#premium {
+    background: rgba(14, 79, 31, 0.95);
+}
+
+#premium .package__main-header {
+    color: white;
+}
+
+#premium .package__subtitle {
+    color: #bbb;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.package__badge {
+    position: absolute;
+    z-index: 10;
+    margin: 1rem;
+    left: 570px;
+    color: white;
+    background: #ff1b68;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 200px;
+    font-size: 1rem;
+    box-shadow: 1px 1px 1px 1px black;
+    top: 70px;
+}
