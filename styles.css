@@ -23,33 +23,28 @@
 }
 
 #product-overview h1 {
-    font-size: 2.2rem;
+    font-size: 1.2rem;
     color: white;
     position: absolute;
-    left: 1%;
-    top: 70%;
+    left: 5%;
+    top: 85%;
 }
 
-.plans {
-    margin: auto;
-}
 
 .plan {
     background: #d5ffdc;
-    display: inline-block;
+    display: block;
     text-align: center;
     padding: 1rem;
-    margin: .5rem;
-    width: 30%;
-    vertical-align: middle;
-    max-width: 380px;
+    margin: .5rem 0;
+    width: 100%;
 }
 
 .plan--highlighted {
     background: #19b84c;
     border: 2px solid black;
     color: white;
-    box-shadow: 2px 2px 2px 2px rgba(24, 24, 24, 0.6);
+    /*box-shadow: 2px 2px 2px 2px rgba(24, 24, 24, 0.6);*/
 }
 
 .plan__annotation {
@@ -62,6 +57,7 @@
 
 .plan-container {
     text-align: center;
+    width: 100%;
 }
 
 .plan__title {
@@ -102,14 +98,16 @@
 }
 
 .key-features--list {
+    margin: 0;
+    padding: 0;
     list-style: none;
     text-align: center;
-    margin: 2rem;
 }
 
 .key-features--list li {
-    display: inline-block;
-    width: 30%;
+    display: block;
+    text-align: center;
+    margin: auto;
     vertical-align: top;
 }
 
@@ -127,7 +125,7 @@
     text-align: center;
     color: white;
     font-weight: bold;
-    font-size: 2.1rem;
+    font-size: 2rem;
 }
 
 
@@ -192,4 +190,43 @@
 .modal__action--negative:active {
     background: #ff5454;
     border-color: #ff5454;
+}
+
+
+@media (min-width: 40rem) {
+    .plans {
+        width: 100%;
+        text-align: center;
+    }
+
+    #product-overview h1 {
+        font-size: 2.5rem;
+        left: 3%;
+        top: 70%;
+    }
+
+    .plan {
+        display: inline-block;
+        max-width: 24rem;
+        min-width: 13rem;
+        margin: 0.5rem;
+    }
+
+    .plan--highlighted {
+        box-shadow: 2px 2px 2px 2px rgba(24, 24, 24, 0.6);
+    }
+
+    .key-features--list li {
+        display: inline-block;
+        text-align: center;
+        margin: auto;
+        width: 40%;
+        vertical-align: top;
+    }
+
+    .key-feature--description {
+        text-align: center;
+        font-size: 1.8rem;
+        margin: 1rem;
+    }
 }

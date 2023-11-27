@@ -7,6 +7,10 @@ body {
     margin: 0;
 }
 
+main {
+    min-height: calc(100vh - 3.5rem - 8rem);
+}
+
 .main-footer {
     background: black;
     padding: 2rem;
@@ -54,7 +58,7 @@ body {
     color: #0e4f1f;
     font-weight: bold;
     text-decoration: none;
-    height: 40px;
+    height: 2.5rem;
     display: inline-block;
     vertical-align: middle;
 }
@@ -109,7 +113,7 @@ body {
     top: 0;
     left: 0;
     background: white;
-    width: 80%;
+    width: 70%;
     height: 100%;
 }
 
@@ -127,7 +131,7 @@ body {
 }
 
 .mobile-nav__item a {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 
 .button:focus {
@@ -135,7 +139,7 @@ body {
 }
 
 .main-nav {
-    display: inline-block;
+    display: none;
     text-align: right;
     width: calc(100% - 122px);
     vertical-align: middle;
@@ -190,4 +194,17 @@ body {
 
 .open {
     display: block !important;
+}
+
+@media (min-width: 40rem) {
+    .toggle-button {
+        display: none;
+    }
+
+    .main-nav {
+        display: inline-block;
+        text-align: right;
+        width: calc(100% - 122px);
+        vertical-align: middle;
+    }
 }
