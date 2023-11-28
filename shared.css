@@ -106,6 +106,13 @@ main {
     color: #0e4f1f;
 }
 
+.button[disabled] {
+    background-color: rgb(128, 128, 128);
+    cursor: not-allowed;
+    border-color: #ccc;
+    color: #ffffff;
+}
+
 .mobile-nav {
     display: none;
     position: fixed;
