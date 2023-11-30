@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Anonymus-bold';
+    src: url("../fonts/AnonymousPro-Bold.ttf");
+}
+
 .packages-container {
     display: inline-block;
     border: 4px solid #0e4f1f;
@@ -32,6 +37,7 @@
     padding: 1rem;
     border: 2px solid #0e4f1f;
     color: #0e4f1f;
+    font-family: 'Anonymus-bold', sans-serif;
 }
 
 .background {
