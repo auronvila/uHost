@@ -1,6 +1,8 @@
 @font-face {
     font-family: 'Anonymus-bold';
-    src: url("../fonts/AnonymousPro-Bold.ttf");
+    src: url("../fonts/AnonymousPro-Bold.ttf") format('truetype');
+    /*src: url("../fonts/AnonymousPro-Bold.woff2") format('woff2');*/
+    /*src: url("../fonts/AnonymousPro-Bold.woff") format('woff');*/
 }
 
 .packages-container {
@@ -38,6 +40,7 @@
     border: 2px solid #0e4f1f;
     color: #0e4f1f;
     font-family: 'Anonymus-bold', sans-serif;
+    text-shadow: 3px 3px 4px rgb(171, 170, 170);
 }
 
 .background {
